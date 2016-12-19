@@ -1,0 +1,208 @@
+fileFormatVersion: 2
+guid: 5f8131b531f884d9bba51341dd6eb687
+timeCreated: 1480517777
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Dom1
+    100002: Dom10
+    100004: Dom10_MeshPart0
+    100006: Dom10_MeshPart1
+    100008: Dom1_MeshPart0
+    100010: Dom1_MeshPart1
+    100012: Dom2
+    100014: Dom2_MeshPart0
+    100016: Dom2_MeshPart1
+    100018: Dom3
+    100020: Dom3_MeshPart0
+    100022: Dom3_MeshPart1
+    100024: Dom4
+    100026: Dom4_MeshPart0
+    100028: Dom4_MeshPart1
+    100030: Dom5
+    100032: Dom5_MeshPart0
+    100034: Dom5_MeshPart1
+    100036: Dom6
+    100038: Dom6_MeshPart0
+    100040: Dom6_MeshPart1
+    100042: Dom7
+    100044: Dom7_MeshPart0
+    100046: Dom7_MeshPart1
+    100048: Dom8
+    100050: Dom8_MeshPart0
+    100052: Dom8_MeshPart1
+    100054: Dom9
+    100056: Dom9_MeshPart0
+    100058: Dom9_MeshPart1
+    100060: Grass
+    100062: //RootNode
+    100064: pPlane1
+    100066: Road
+    400000: Dom1
+    400002: Dom10
+    400004: Dom10_MeshPart0
+    400006: Dom10_MeshPart1
+    400008: Dom1_MeshPart0
+    400010: Dom1_MeshPart1
+    400012: Dom2
+    400014: Dom2_MeshPart0
+    400016: Dom2_MeshPart1
+    400018: Dom3
+    400020: Dom3_MeshPart0
+    400022: Dom3_MeshPart1
+    400024: Dom4
+    400026: Dom4_MeshPart0
+    400028: Dom4_MeshPart1
+    400030: Dom5
+    400032: Dom5_MeshPart0
+    400034: Dom5_MeshPart1
+    400036: Dom6
+    400038: Dom6_MeshPart0
+    400040: Dom6_MeshPart1
+    400042: Dom7
+    400044: Dom7_MeshPart0
+    400046: Dom7_MeshPart1
+    400048: Dom8
+    400050: Dom8_MeshPart0
+    400052: Dom8_MeshPart1
+    400054: Dom9
+    400056: Dom9_MeshPart0
+    400058: Dom9_MeshPart1
+    400060: Grass
+    400062: //RootNode
+    400064: pPlane1
+    400066: Road
+    2300000: Dom10_MeshPart0
+    2300002: Dom10_MeshPart1
+    2300004: Dom1_MeshPart0
+    2300006: Dom1_MeshPart1
+    2300008: Dom2_MeshPart0
+    2300010: Dom2_MeshPart1
+    2300012: Dom3_MeshPart0
+    2300014: Dom3_MeshPart1
+    2300016: Dom4_MeshPart0
+    2300018: Dom4_MeshPart1
+    2300020: Dom5_MeshPart0
+    2300022: Dom5_MeshPart1
+    2300024: Dom6_MeshPart0
+    2300026: Dom6_MeshPart1
+    2300028: Dom7_MeshPart0
+    2300030: Dom7_MeshPart1
+    2300032: Dom8_MeshPart0
+    2300034: Dom8_MeshPart1
+    2300036: Dom9_MeshPart0
+    2300038: Dom9_MeshPart1
+    2300040: Grass
+    2300042: pPlane1
+    2300044: Road
+    3300000: Dom10_MeshPart0
+    3300002: Dom10_MeshPart1
+    3300004: Dom1_MeshPart0
+    3300006: Dom1_MeshPart1
+    3300008: Dom2_MeshPart0
+    3300010: Dom2_MeshPart1
+    3300012: Dom3_MeshPart0
+    3300014: Dom3_MeshPart1
+    3300016: Dom4_MeshPart0
+    3300018: Dom4_MeshPart1
+    3300020: Dom5_MeshPart0
+    3300022: Dom5_MeshPart1
+    3300024: Dom6_MeshPart0
+    3300026: Dom6_MeshPart1
+    3300028: Dom7_MeshPart0
+    3300030: Dom7_MeshPart1
+    3300032: Dom8_MeshPart0
+    3300034: Dom8_MeshPart1
+    3300036: Dom9_MeshPart0
+    3300038: Dom9_MeshPart1
+    3300040: Grass
+    3300042: pPlane1
+    3300044: Road
+    4300000: Dom10_MeshPart0
+    4300002: Dom10_MeshPart1
+    4300004: pPlane1
+    4300006: Dom9_MeshPart0
+    4300008: Dom9_MeshPart1
+    4300010: Dom8_MeshPart0
+    4300012: Dom8_MeshPart1
+    4300014: Dom7_MeshPart0
+    4300016: Dom7_MeshPart1
+    4300018: Dom6_MeshPart0
+    4300020: Dom6_MeshPart1
+    4300022: Dom5_MeshPart0
+    4300024: Dom5_MeshPart1
+    4300026: Dom4_MeshPart0
+    4300028: Dom4_MeshPart1
+    4300030: Dom3_MeshPart0
+    4300032: Dom3_MeshPart1
+    4300034: Dom2_MeshPart0
+    4300036: Dom2_MeshPart1
+    4300038: Dom1_MeshPart0
+    4300040: Dom1_MeshPart1
+    4300042: Road
+    4300044: Grass
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 350
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
