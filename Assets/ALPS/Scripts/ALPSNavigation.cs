@@ -30,6 +30,7 @@ public class ALPSNavigation : MonoBehaviour {
 	//=====================================================================================================
 
 	/**Public**/
+    public float Speed;
 	public static float pitch;
 	public float forwardLowerBound 	= 20;
 	public float forwardUpperBound 	= 30;
@@ -68,7 +69,7 @@ public class ALPSNavigation : MonoBehaviour {
 		BackwardLimit = 360 - backwardLimit;
 
 		controller = this.gameObject.GetComponent ("CharacterController") as CharacterController;
-		this.gameObject.AddComponent <CharacterMotor>();
+		//this.gameObject.AddComponent <CharacterMotor>();
 		head = GameObject.Find ("ALPSHead");
 		if (Application.platform == RuntimePlatform.Android) {
 			moving = false;
@@ -95,7 +96,7 @@ public class ALPSNavigation : MonoBehaviour {
 
                 moving = true;
             }
-			controller.Move (new Vector3 (head.transform.forward.x, 0, head.transform.forward.z) * Time.deltaTime * 3);
+			controller.Move (new Vector3 (head.transform.forward.x, 0, head.transform.forward.z) * Time.deltaTime * Speed);
 		} else if (pitch >= BackwardUpperBound && pitch <= BackwardLowerBound) {
             if (!moving)
             {
@@ -109,7 +110,7 @@ public class ALPSNavigation : MonoBehaviour {
                 }
                 moving = true;
             }
-			controller.Move (new Vector3 (-head.transform.forward.x, 0, -head.transform.forward.z) * Time.deltaTime * 3);
+			controller.Move (new Vector3 (-head.transform.forward.x, 0, -head.transform.forward.z) * Time.deltaTime * Speed);
 			
 		} else {
             if (moving) moving = false;
