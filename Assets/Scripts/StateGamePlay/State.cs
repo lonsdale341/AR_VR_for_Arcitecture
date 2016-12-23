@@ -34,6 +34,16 @@ internal abstract class State
                     managerSateScreen.State = new State_game_city();
                     break;
                 }
+            case Mark.ar_camera_apartment:
+                {
+                    managerSateScreen.State = new State_ar_camera_apartment();
+                    break;
+                }
+            case Mark.vr_apartment:
+                {
+                    managerSateScreen.State = new State_vr_apartment();
+                    break;
+                }
         }
     }
 

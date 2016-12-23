@@ -35,7 +35,7 @@ internal class Sate_ar_camera_city : State
         
         DataLevel.Instance.City.SetActive(true);
        
-        //DataLevel.Instance.ButtonBackPlay.SetActive(true);
+        DataLevel.Instance.ButtonBackPlay.SetActive(true);
 
 
 

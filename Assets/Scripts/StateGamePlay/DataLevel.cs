@@ -11,8 +11,12 @@ public class DataLevel : SingletonBehaviour<DataLevel>
     public GameObject ALPS_Camera;
     public GameObject Game_Camera;
     public GameObject City;
+    public GameObject Apartment;
     public GameObject VR_Game_Parent;
     public GameObject Light_City;
+    public GameObject Light_apartment_1;
+    public GameObject Light_apartment_2;
+    public GameObject Collider_Apartment;
     public GameObject ImgMarker;
 
     private ManagerSateScreen managerSateScreen;
@@ -41,8 +45,12 @@ public class DataLevel : SingletonBehaviour<DataLevel>
         ALPS_Camera.SetActive(false);
         Game_Camera.SetActive(false);
         City.SetActive(false);
+        Apartment.SetActive(false);
         //VR_Game_Parent.SetActive(false);
         Light_City.SetActive(false);
+        Light_apartment_1.SetActive(false);
+        Light_apartment_2.SetActive(false);
+        Collider_Apartment.SetActive(false);
         
 
     }
