@@ -8,8 +8,10 @@ public class DataLevel : SingletonBehaviour<DataLevel>
     public GameObject Screen_solution_Overview;
     public GameObject ButtonBackPlay;
     public GameObject AR_Camera;
-    public GameObject ALPS_Camera;
-    public GameObject Game_Camera;
+    public GameObject ALPS_Camera_District;
+    public GameObject Game_Camera_District;
+    public GameObject ALPS_Camera_Apartment;
+    public GameObject Game_Camera_Apartment;
     public GameObject City;
     public GameObject Apartment;
     public GameObject VR_Game_Parent;
@@ -42,8 +44,10 @@ public class DataLevel : SingletonBehaviour<DataLevel>
         Screen_solution_Overview.SetActive(false);
         ButtonBackPlay.SetActive(false);
         AR_Camera.SetActive(false);
-        ALPS_Camera.SetActive(false);
-        Game_Camera.SetActive(false);
+        ALPS_Camera_District.SetActive(false);
+        Game_Camera_District.SetActive(false);
+        ALPS_Camera_Apartment.SetActive(false);
+        Game_Camera_Apartment.SetActive(false);
         City.SetActive(false);
         Apartment.SetActive(false);
         //VR_Game_Parent.SetActive(false);

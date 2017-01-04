@@ -15,8 +15,8 @@ internal class State_vr_city : State
         DataLevel.Instance.DisableGameObjectForState();
         
         DataLevel.Instance.City.transform.parent = DataLevel.Instance.VR_Game_Parent.transform;
-        DataLevel.Instance.City.transform.localPosition = new Vector3(0, -0.1323196f, 0);
-        DataLevel.Instance.City.transform.localScale = new Vector3(0.00128866f, 0.00128866f, 0.00128866f);
+      //  DataLevel.Instance.City.transform.localPosition = new Vector3(0, -0.1323196f, 0);
+       // DataLevel.Instance.City.transform.localScale = new Vector3(0.00128866f, 0.00128866f, 0.00128866f);
         DataLevel.Instance.City.SetActive(true);
         DataLevel.Instance.Light_City.SetActive(true);
         Renderer[] rendererComponents = DataLevel.Instance.VR_Game_Parent.GetComponentsInChildren<Renderer>(true);
@@ -33,7 +33,7 @@ internal class State_vr_city : State
         {
             component.enabled = true;
         }
-        DataLevel.Instance.ALPS_Camera.SetActive(true);
+        DataLevel.Instance.ALPS_Camera_District.SetActive(true);
         DataLevel.Instance.ButtonBackPlay.SetActive(true);
         
 
