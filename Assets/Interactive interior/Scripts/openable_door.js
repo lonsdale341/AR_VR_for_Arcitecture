@@ -26,7 +26,7 @@ Time.deltaTime * smooth);
 
 if(enter == true){
 
-//gameObject.Find("Enter").GetComponent("GUITexture").enabled = true;
+gameObject.Find("Enter").GetComponent("GUITexture").enabled = true;
 
 if(Input.GetKeyDown("e")){
 open = !open;
@@ -46,7 +46,7 @@ if (other.gameObject.tag == "Hand") {
 function OnTriggerExit (other : Collider){
 
 if (other.gameObject.tag == "Hand") {
-//gameObject.Find("Enter").GetComponent("GUITexture").enabled = false;
+gameObject.Find("Enter").GetComponent("GUITexture").enabled = false;
 (enter) = false;
 }
 }
