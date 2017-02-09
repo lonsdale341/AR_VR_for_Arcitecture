@@ -20,7 +20,7 @@ public class DataLevel : SingletonBehaviour<DataLevel>
     public GameObject Light_apartment_2;
     public GameObject Collider_Apartment;
     public GameObject ImgMarker;
-
+	public GameObject Panorama;
     private ManagerSateScreen managerSateScreen;
     void Awake()
     {

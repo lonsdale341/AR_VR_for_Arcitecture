@@ -21,7 +21,7 @@ internal class State_vr_city : State
         DataLevel.Instance.Light_City.SetActive(true);
         Renderer[] rendererComponents = DataLevel.Instance.VR_Game_Parent.GetComponentsInChildren<Renderer>(true);
         Collider[] colliderComponents = DataLevel.Instance.VR_Game_Parent.GetComponentsInChildren<Collider>(true);
-
+		DataLevel.Instance.Panorama.SetActive (true);
         // Enable rendering:
         foreach (Renderer component in rendererComponents)
         {

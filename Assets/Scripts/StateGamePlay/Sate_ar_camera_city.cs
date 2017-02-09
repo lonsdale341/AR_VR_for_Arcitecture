@@ -19,7 +19,8 @@ internal class Sate_ar_camera_city : State
         DataLevel.Instance.AR_Camera.SetActive(true);
         Renderer[] rendererComponents = DataLevel.Instance.VR_Game_Parent.GetComponentsInChildren<Renderer>(true);
         Collider[] colliderComponents = DataLevel.Instance.VR_Game_Parent.GetComponentsInChildren<Collider>(true);
-
+		DataLevel.Instance.Panorama.SetActive (false);
+		Debug.Log ("City_AR");
         // Enable rendering:
         foreach (Renderer component in rendererComponents)
         {

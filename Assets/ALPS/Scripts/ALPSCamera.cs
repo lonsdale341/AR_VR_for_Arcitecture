@@ -42,7 +42,9 @@ public class ALPSCamera : MonoBehaviour{
 	/// Initializes the camera.
 	/// </summary>
 	public void Init(){
+		Debug.Log ("Init");
 		Vector3 camLeftPos = GetComponent<Camera>().transform.localPosition; 
+		GetComponent<Camera> ().nearClipPlane = 0.01f;
 		camLeftPos.x = (leftEye?-1:1) * deviceConfig.ILD * 0.0005f;
 		camLeftPos.z = ALPSConfig.neckPivotToEye.x * 0.001f;
 		camLeftPos.y = ALPSConfig.neckPivotToEye.y * 0.001f;
