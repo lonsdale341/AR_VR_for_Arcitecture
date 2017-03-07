@@ -13,9 +13,7 @@ internal class State_main_menu : State
     private void StateScreen()
     {
         DataLevel.Instance.DisableGameObjectForState();
-        DataLevel.Instance.Screen_MainMenu.SetActive(true);
-
-
+		DataLevel.Instance.MainMenu.SetActive(true);
 
 
     }
