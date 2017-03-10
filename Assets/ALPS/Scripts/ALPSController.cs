@@ -73,18 +73,25 @@ public class ALPSController : MonoBehaviour {
 		head = new GameObject ("ALPSHead");
 		head.transform.parent = transform;
 		head.transform.position = transform.position;
-
+		#if UNITY_IOS
+		head.AddComponent<GyroController>();
+		screenWidthPix = Screen.width;
+		screenHeightPix = Screen.height;
+		#endif
 		#if UNITY_EDITOR
-			head.AddComponent<MouseLook>();
+		head.AddComponent<MouseLook>();
+
 			screenWidthPix = Screen.width;
 			screenHeightPix = Screen.height;
-		#elif UNITY_ANDROID
+		#endif
+		#if UNITY_ANDROID
 			head.AddComponent(typeof(ALPSGyro));
 			Screen.orientation = ScreenOrientation.LandscapeLeft;
 			ALPSAndroid.Init ();
 			screenWidthPix = ALPSAndroid.WidthPixels ();
 			screenHeightPix = ALPSAndroid.HeightPixels ();
-#elif UNITY_WP_8_1
+		#endif
+#if UNITY_WP_8_1
         	        head.AddComponent(typeof(ALPSGyro));
 			Screen.orientation = ScreenOrientation.LandscapeLeft;
             ALPSWP8.Init();

@@ -33,7 +33,20 @@ public class FPSInputController : MonoBehaviour {
 			ALPSAndroid.Init ();
 
 #endif
+		#if UNITY_EDITOR
+
+		head.AddComponent<MouseLook>();
+		#endif
+		#if UNITY_ANDROID
+		head.AddComponent(typeof(ALPSGyro));
+		ALPSAndroid.Init ();
+
+		#endif
+
+
     }
+
+
 
     public void Start()
     {
