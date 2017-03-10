@@ -24,7 +24,7 @@ public class FPSInputController : MonoBehaviour {
     /**Private**/
     private CharacterController controller;
     private bool moving;
-    
+    private bool IsMoving;
     public void Awake()
     {
         head =gameObject;
@@ -37,6 +37,7 @@ public class FPSInputController : MonoBehaviour {
 
     public void Start()
     {
+        IsMoving = false;
         ForwardLowerBound = forwardLowerBound;
         ForwardUpperBound = forwardUpperBound;
         BackwardLowerBound = 360 - backwardLowerBound;
@@ -58,45 +59,62 @@ public class FPSInputController : MonoBehaviour {
     /// </summary>
     public void Update()
     {
-        pitch = head.transform.eulerAngles.x;
-        if (pitch >= ForwardLowerBound && pitch <= ForwardUpperBound)
+//        pitch = head.transform.eulerAngles.x;
+//        if (pitch >= ForwardLowerBound && pitch <= ForwardUpperBound)
+//        {
+//
+//            if (!moving)
+//            {
+//                if (EnableVibration)
+//                {
+//#if UNITY_ANDROID
+//                ALPSAndroid.Vibrate(20);
+//#elif UNITY_WP_8_1
+//                    ALPSWP8.Vibrate(200);
+//#endif
+//                }
+//
+//                moving = true;
+//            }
+//            controller.Move(new Vector3(head.transform.forward.x, 0, head.transform.forward.z) * Time.deltaTime * Speed);
+//        }
+//        else if (pitch >= BackwardUpperBound && pitch <= BackwardLowerBound)
+//        {
+//            if (!moving)
+//            {
+//                if (EnableVibration)
+//                {
+//#if UNITY_ANDROID
+//                ALPSAndroid.Vibrate(20);
+//#elif UNITY_WP_8_1
+//                    ALPSWP8.Vibrate(200);
+//#endif
+//                }
+//                moving = true;
+//            }
+//            controller.Move(new Vector3(-head.transform.forward.x, 0, -head.transform.forward.z) * Time.deltaTime * Speed);
+//
+//        }
+//        else
+//        {
+//            if (moving) moving = false;
+//        }
+        if (Input.GetMouseButtonDown(0))
         {
+            
+            IsMoving = true;
+        }
 
-            if (!moving)
-            {
-                if (EnableVibration)
-                {
-#if UNITY_ANDROID
-                ALPSAndroid.Vibrate(20);
-#elif UNITY_WP_8_1
-                    ALPSWP8.Vibrate(200);
-#endif
-                }
-
-                moving = true;
-            }
+        if (Input.GetMouseButtonUp(0))
+        {
+            
+            IsMoving = false;
+        }
+            
+        if (IsMoving)
+        {
+            Debug.Log("Pressed left click.");
             controller.Move(new Vector3(head.transform.forward.x, 0, head.transform.forward.z) * Time.deltaTime * Speed);
-        }
-        else if (pitch >= BackwardUpperBound && pitch <= BackwardLowerBound)
-        {
-            if (!moving)
-            {
-                if (EnableVibration)
-                {
-#if UNITY_ANDROID
-                ALPSAndroid.Vibrate(20);
-#elif UNITY_WP_8_1
-                    ALPSWP8.Vibrate(200);
-#endif
-                }
-                moving = true;
-            }
-            controller.Move(new Vector3(-head.transform.forward.x, 0, -head.transform.forward.z) * Time.deltaTime * Speed);
-
-        }
-        else
-        {
-            if (moving) moving = false;
         }
     }
 
@@ -118,4 +136,5 @@ public class FPSInputController : MonoBehaviour {
             else return 0f;
         }
     }
+   
 }
