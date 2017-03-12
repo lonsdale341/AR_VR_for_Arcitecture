@@ -18,28 +18,28 @@ public class FPSInputController : MonoBehaviour {
     public static float BackwardUpperBound;
     public static float ForwardLimit;
     public static float BackwardLimit;
-
+	public static bool IsMoving;
     public bool EnableVibration = false;
 
     /**Private**/
     private CharacterController controller;
     private bool moving;
-    private bool IsMoving;
+   
     public void Awake()
     {
         head =gameObject;
-#if UNITY_ANDROID
-			head.AddComponent(typeof(ALPSGyro));
-			ALPSAndroid.Init ();
 
-#endif
 		#if UNITY_EDITOR
 
+
 		head.AddComponent<MouseLook>();
-		#endif
-		#if UNITY_ANDROID
+
+		#elif UNITY_ANDROID
 		head.AddComponent(typeof(ALPSGyro));
 		ALPSAndroid.Init ();
+		#elif UNITY_IOS
+
+		head.AddComponent<GyroController>();
 
 		#endif
 
@@ -114,7 +114,7 @@ public class FPSInputController : MonoBehaviour {
 //        }
         if (Input.GetMouseButtonDown(0))
         {
-            
+			Debug.Log ("move true");
             IsMoving = true;
         }
 
