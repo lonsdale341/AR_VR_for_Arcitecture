@@ -13,7 +13,21 @@ internal abstract class State
                     managerSateScreen.State = new State_main_menu();
                     break;
                 }
-
+			case Mark.vr_tutor:
+				{
+				managerSateScreen.State = new State_vr_tutor ();
+					break;
+				}
+			case Mark.ar_tutor:
+				{
+				managerSateScreen.State = new State_ar_tutor ();
+					break;
+				}
+			case Mark.game_tutor:
+				{
+				managerSateScreen.State = new State_game_tutor ();
+					break;
+				}
             case Mark.ar_camera_apartment:
                 {
                     managerSateScreen.State = new State_ar_camera_apartment();

@@ -4,6 +4,9 @@ using System.Collections;
 public class DataLevel : SingletonBehaviour<DataLevel>
 {
 	public GameObject MainMenu;
+	public GameObject VRTutor;
+	public GameObject ARTutor;
+	public GameObject GameTutor;
     
     public GameObject ButtonBackPlay;
     public GameObject AR_Camera;
@@ -40,6 +43,9 @@ public class DataLevel : SingletonBehaviour<DataLevel>
     {
        
 		MainMenu.SetActive (false);
+		VRTutor.SetActive (false);
+		ARTutor.SetActive(false);
+		GameTutor.SetActive (false);
         ButtonBackPlay.SetActive(false);
         AR_Camera.SetActive(false);
    
