@@ -13,5 +13,6 @@ internal class State_vr_tutor : State {
 		DataLevel.Instance.DisableGameObjectForState();
 		DataLevel.Instance.VRTutor.SetActive (true);
 		DataLevel.Instance.ButtonBackPlay.SetActive(true);
+		DataLevel.Instance.BackgroundMenu.SetActive (true);
 	}
 }

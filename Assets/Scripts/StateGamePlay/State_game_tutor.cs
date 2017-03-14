@@ -9,5 +9,10 @@ internal class State_game_tutor : State {
 
 	private void StateScreen()
 	{
+
+		DataLevel.Instance.DisableGameObjectForState();
+		DataLevel.Instance.GameTutor.SetActive (true);
+		DataLevel.Instance.ButtonBackPlay.SetActive(true);
+		DataLevel.Instance.BackgroundMenu.SetActive (true);
 	}
 }

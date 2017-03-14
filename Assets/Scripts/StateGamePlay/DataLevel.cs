@@ -7,6 +7,7 @@ public class DataLevel : SingletonBehaviour<DataLevel>
 	public GameObject VRTutor;
 	public GameObject ARTutor;
 	public GameObject GameTutor;
+	public GameObject BackgroundMenu;
     
     public GameObject ButtonBackPlay;
     public GameObject AR_Camera;
@@ -47,6 +48,8 @@ public class DataLevel : SingletonBehaviour<DataLevel>
 		ARTutor.SetActive(false);
 		GameTutor.SetActive (false);
         ButtonBackPlay.SetActive(false);
+		BackgroundMenu.SetActive (false);
+
         AR_Camera.SetActive(false);
    
         ALPS_Camera_Apartment.SetActive(false);

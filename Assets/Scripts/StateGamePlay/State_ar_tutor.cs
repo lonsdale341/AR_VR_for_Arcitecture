@@ -12,5 +12,6 @@ internal class State_ar_tutor : State {
 		DataLevel.Instance.DisableGameObjectForState();
 		DataLevel.Instance.ARTutor.SetActive (true);
 		DataLevel.Instance.ButtonBackPlay.SetActive(true);
+		DataLevel.Instance.BackgroundMenu.SetActive (true);
 	}
 }
