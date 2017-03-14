@@ -33,8 +33,8 @@ class CharacterMotorMovement {
 	var maxAirAcceleration : float = 20.0;
 
 	// The gravity for the character
-	var gravity : float = 10.0;
-	var maxFallSpeed : float = 20.0;
+	var gravity : float = 0.0;
+	var maxFallSpeed : float = 0.0;
 	
 	// For the next variables, @System.NonSerialized tells Unity to not serialize the variable or show it in the inspector view.
 	// Very handy for organization!
