@@ -50,6 +50,7 @@ public class ALPSGyro : MonoBehaviour {
 	/// </summary>
 	public void Awake(){
 #if UNITY_ANDROID
+	
 			init();
 #endif
 #if UNITY_WP_8_1
