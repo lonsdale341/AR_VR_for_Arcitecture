@@ -30,6 +30,21 @@ internal abstract class State
                     managerSateScreen.State = new State_game_city();
                     break;
                 }
+			case Mark.ar_tutorial:
+				{
+				managerSateScreen.State = new State_ar_tutorial ();
+					break;
+				}
+			case Mark.vr_tutorial:
+				{
+				managerSateScreen.State = new State_vr_tutorial ();
+					break;
+				}
+			case Mark.game_tutorial:
+				{
+				managerSateScreen.State = new State_game_tutorial ();
+					break;
+				}
      
         }
     }

@@ -8,9 +8,9 @@ public enum Mark
     ar_camera_city,
     game_city,
     vr_city,
-    ar_camera_apartment,
-    vr_apartment,
-    game_apartment
+    ar_tutorial,
+	vr_tutorial,
+	game_tutorial
     
 
 }

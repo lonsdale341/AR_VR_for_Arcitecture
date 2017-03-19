@@ -15,7 +15,7 @@ internal class State_main_menu : State
         DataLevel.Instance.DisableGameObjectForState();
         DataLevel.Instance.Screen_MainMenu.SetActive(true);
 		FPSInputController.IsMoving = false;
-
+		DataLevel.Instance.Image_background.SetActive (true);
 
 
     }
