@@ -1,13 +1,25 @@
 fileFormatVersion: 2
-guid: 91e0b3bd894997943b528e427528c735
+guid: d03ef848ef921d24c940062605dc3a15
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: Box004
+    100000: Cylinder001
+    100002: //RootNode
+    100004: Washing_glass
+    100006: Cylinder002
+    400000: Cylinder001
+    400002: //RootNode
+    400004: Washing_glass
+    400006: Cylinder002
+    2300000: Cylinder001
+    2300002: Washing_glass
+    2300004: Cylinder002
+    3300000: Cylinder001
+    3300002: Washing_glass
+    3300004: Cylinder002
+    4300000: Washing_glass
+    4300002: Cylinder001
+    4300004: Cylinder002
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -52,9 +64,10 @@ ModelImporter:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 4
-  importAnimation: 1
+  importAnimation: 0
   copyAvatar: 0
   humanDescription:
+    serializedVersion: 2
     human: []
     skeleton: []
     armTwist: 0.5
@@ -65,9 +78,12 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 1
   userData: 
