@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 44a019044f0c9464e8920fd7056d7a79
-timeCreated: 1483022629
+guid: 7225caaefd78447f6951db2ba80c728d
+timeCreated: 1490023122
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -9,7 +9,7 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: table_computer
+    4300000: living_room_lighting_1
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -40,7 +40,7 @@ ModelImporter:
     addColliders: 0
     importBlendShapes: 1
     swapUVChannels: 0
-    generateSecondaryUV: 1
+    generateSecondaryUV: 0
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0
@@ -71,7 +71,7 @@ ModelImporter:
     rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
-    skeletonHasParents: 0
+    skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 0
   humanoidOversampling: 1

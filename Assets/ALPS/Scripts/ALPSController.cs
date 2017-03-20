@@ -145,8 +145,10 @@ public class ALPSController : MonoBehaviour {
 		cameraLeft.GetComponent<Camera>().depth = 0;
 		cameraRight.GetComponent<Camera>().depth = 1;
 
-	   // cameraLeft.GetComponent<Camera>().nearClipPlane = 0.01f;
-       // cameraRight.GetComponent<Camera>().nearClipPlane = 0.01f;
+	    cameraLeft.GetComponent<Camera>().nearClipPlane = 0.05f;
+        cameraRight.GetComponent<Camera>().nearClipPlane = 0.05f;
+		//cameraRight.GetComponent<Camera> ().farClipPlane = 7f;
+		//cameraLeft.GetComponent<Camera> ().farClipPlane = 7f;
 
 		GetComponent<Camera>().depth = Mathf.Max (cameraLeft.GetComponent<Camera>().depth, cameraRight.GetComponent<Camera>().depth) + 1;
 
