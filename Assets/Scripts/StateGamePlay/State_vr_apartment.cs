@@ -34,6 +34,7 @@ internal class State_vr_apartment :State
         {
             component.enabled = true;
         }
+		DataLevel.Instance.ALPS_Camera_Apartment.GetComponent<Camera>().enabled = true;
         DataLevel.Instance.ALPS_Camera_Apartment.SetActive(true);
         DataLevel.Instance.ButtonBackPlay.SetActive(true);
         

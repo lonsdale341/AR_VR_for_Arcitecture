@@ -75,7 +75,6 @@ public class ALPSController : MonoBehaviour {
 		head.transform.position = transform.position;
 		#if UNITY_EDITOR
 		head.AddComponent<MouseLook>();
-
 		screenWidthPix = Screen.width;
 		screenHeightPix = Screen.height;
 
@@ -86,14 +85,17 @@ public class ALPSController : MonoBehaviour {
 	
 	
 		#elif UNITY_ANDROID
+		//head.AddComponent<MouseLook>();
 			head.AddComponent(typeof(ALPSGyro));
-			Screen.orientation = ScreenOrientation.LandscapeLeft;
+		screenWidthPix = Screen.width;
+		screenHeightPix = Screen.height;
+			//Screen.orientation = ScreenOrientation.LandscapeLeft;
 			ALPSAndroid.Init ();
-			screenWidthPix = ALPSAndroid.WidthPixels ();
-			screenHeightPix = ALPSAndroid.HeightPixels ();
+			//screenWidthPix = ALPSAndroid.WidthPixels ();
+			//screenHeightPix = ALPSAndroid.HeightPixels ();
 		#endif
 #if UNITY_WP_8_1
-        	        head.AddComponent(typeof(ALPSGyro));
+        	head.AddComponent(typeof(ALPSGyro));
 			Screen.orientation = ScreenOrientation.LandscapeLeft;
             ALPSWP8.Init();
         	screenWidthPix = ALPSWP8.WidthPixels ();
