@@ -10,6 +10,10 @@ public class DataLevel : SingletonBehaviour<DataLevel>
 	public GameObject Game_tutorial;
 	public GameObject Image_background;
 	public GameObject Image_city_roll;
+	public GameObject Menu_first_page;
+	public GameObject Menu_about_us;
+	public GameObject Img_road;
+	public GameObject Button_back_first_menu;
 
     public GameObject ButtonBackPlay;
     public GameObject AR_Camera;
@@ -42,12 +46,17 @@ public class DataLevel : SingletonBehaviour<DataLevel>
 	}
     public void DisableGameObjectForState()
     {
+		Img_road.SetActive (false);
         Screen_MainMenu.SetActive(false);
 		AR_tutorial.SetActive (false);
 		VR_tutorial.SetActive (false);
 		Game_tutorial.SetActive (false);
 		Image_background.SetActive (false);
 		Image_city_roll.SetActive (false);
+		Menu_about_us.SetActive (false);
+		Menu_first_page.SetActive (false);
+	
+		Button_back_first_menu.SetActive (false);
 
         ButtonBackPlay.SetActive(false);
         AR_Camera.SetActive(false);
@@ -56,10 +65,7 @@ public class DataLevel : SingletonBehaviour<DataLevel>
 		Panorama.SetActive (false);
         City.SetActive(false);
 
-        //VR_Game_Parent.SetActive(false);
-
-
-        
+      
 
     }
     public void ChangedSate(Mark mark)

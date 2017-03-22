@@ -12,6 +12,7 @@ internal abstract class State
                 {
                     managerSateScreen.State = new State_main_menu();
                     break;
+				Debug.Log ("Main_menu");
                 }
         
             case Mark.ar_camera_city:
@@ -45,6 +46,16 @@ internal abstract class State
 				managerSateScreen.State = new State_game_tutorial ();
 					break;
 				}
+		case Mark.menu_first_page:
+			{
+				managerSateScreen.State = new State_first_page ();
+				break;
+			}
+		case Mark.menu_about_company:
+			{
+				managerSateScreen.State = new State_about_us ();
+				break;
+			}
      
         }
     }

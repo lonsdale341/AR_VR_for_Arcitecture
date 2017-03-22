@@ -19,7 +19,7 @@ public class ButtonMainMenu : MonoBehaviour {
 
 	public void OnClickButton()
     {
-		Debug.Log ("Check");
+	//	Debug.Log ("Check");
         DataLevel.Instance.ChangedSate(mark);
     }
 }

@@ -10,7 +10,9 @@ public enum Mark
     vr_city,
     ar_tutorial,
 	vr_tutorial,
-	game_tutorial
+	game_tutorial,
+	menu_first_page,
+	menu_about_company
     
 
 }
