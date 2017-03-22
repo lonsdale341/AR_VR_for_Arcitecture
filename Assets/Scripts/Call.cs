@@ -6,6 +6,6 @@ public class Call : MonoBehaviour {
 
 	public void CallUs()
 	{
-		Application.OpenURL ("tel://+380960405514");
+		Application.OpenURL ("tel://+380675065189");
 	}
 }
