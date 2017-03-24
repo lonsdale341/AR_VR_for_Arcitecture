@@ -43,6 +43,16 @@ internal abstract class State
                     managerSateScreen.State = new State_game_apartment();
                     break;
                 }
+		case Mark.menu_about_app:
+			{
+				managerSateScreen.State = new State_menu_about_app ();
+				break;
+			}
+		case Mark.menu_about_company:
+			{
+				managerSateScreen.State = new State_menu_about_company ();
+				break;
+			}
         }
     }
 

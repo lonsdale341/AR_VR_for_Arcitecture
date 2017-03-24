@@ -8,6 +8,11 @@ public class DataLevel : SingletonBehaviour<DataLevel>
 	public GameObject ARTutor;
 	public GameObject GameTutor;
 	public GameObject BackgroundMenu;
+	public GameObject Interior_Img;
+	public GameObject Background_for_explain;
+	public GameObject P_About_App;
+	public GameObject P_About_Company;
+	public GameObject Back_To_First_Menu;
     
     public GameObject ButtonBackPlay;
     public GameObject AR_Camera;
@@ -42,7 +47,12 @@ public class DataLevel : SingletonBehaviour<DataLevel>
 	}
     public void DisableGameObjectForState()
     {
-       
+		Interior_Img.SetActive(false);
+		Background_for_explain.SetActive (false);
+		P_About_App.SetActive (false);
+		P_About_Company.SetActive (false);
+		Back_To_First_Menu.SetActive (false);
+		      
 		MainMenu.SetActive (false);
 		VRTutor.SetActive (false);
 		ARTutor.SetActive(false);
