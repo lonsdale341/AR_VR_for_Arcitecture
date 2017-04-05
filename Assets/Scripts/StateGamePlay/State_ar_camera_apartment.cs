@@ -12,8 +12,9 @@ internal class State_ar_camera_apartment :State
 
     private void StateScreen()
     {
-        DataLevel.Instance.DisableGameObjectForState();
-        DataLevel.Instance.AR_Camera.SetActive(true);
+      //  DataLevel.Instance.DisableGameObjectForState();
+      //  DataLevel.Instance.AR_Camera.SetActive(true);
+		DataLevel.Instance.ARAlert.SetActive(false);
         Renderer[] rendererComponents = DataLevel.Instance.VR_Game_Parent.GetComponentsInChildren<Renderer>(true);
         Collider[] colliderComponents = DataLevel.Instance.VR_Game_Parent.GetComponentsInChildren<Collider>(true);
 

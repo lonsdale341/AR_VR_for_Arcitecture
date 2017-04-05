@@ -12,7 +12,8 @@ public enum Mark
     vr_apartment,
     game_apartment,
 	menu_about_app,
-	menu_about_company
+	menu_about_company,
+	ar_alert
     
 
 }

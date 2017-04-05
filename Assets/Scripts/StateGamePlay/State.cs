@@ -53,6 +53,11 @@ internal abstract class State
 				managerSateScreen.State = new State_menu_about_company ();
 				break;
 			}
+			case Mark.ar_alert:
+			{
+				managerSateScreen.State = new State_ar_alert ();
+				break;
+			}
         }
     }
 

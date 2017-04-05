@@ -13,6 +13,7 @@ public class DataLevel : SingletonBehaviour<DataLevel>
 	public GameObject P_About_App;
 	public GameObject P_About_Company;
 	public GameObject Back_To_First_Menu;
+	public GameObject ARAlert;
     
     public GameObject ButtonBackPlay;
     public GameObject AR_Camera;
@@ -47,6 +48,7 @@ public class DataLevel : SingletonBehaviour<DataLevel>
 	}
     public void DisableGameObjectForState()
     {
+		ARAlert.SetActive (false);
 		Interior_Img.SetActive(false);
 		Background_for_explain.SetActive (false);
 		P_About_App.SetActive (false);
